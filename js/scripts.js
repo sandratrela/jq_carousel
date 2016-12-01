@@ -25,9 +25,10 @@ $(function() {
 	});
 
 
-	//var prev = $("prev");
-	//var next = $("next");
+	var prev = $("prev");
+	var next = $("next");
 
-	//prev.click()
-	//next.click()
+	$prev.on('click', changePrev);
+	$next.on('click', changeNext);
+
 });
