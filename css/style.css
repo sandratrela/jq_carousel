@@ -1,0 +1,38 @@
+
+#carousel {
+	position: relative;
+	margin: 0 auto;
+	max-width: 400px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+ul {
+	list-style: none;
+	display: flex;
+    padding: 0;
+}
+li {
+	list-style: none;
+	display: flex;
+}
+.prev {
+	cursor: pointer;
+	position: absolute;
+	top: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+	border-radius: 0 3px 3px 0;
+	left: 3%;
+}
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+	border-radius: 0 3px 3px 0;
+	right: 3%;
+}
