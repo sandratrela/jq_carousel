@@ -1,7 +1,7 @@
 $(function() {
 	var carouselList = $("#carousel ul");
 
-	var slidesInterval = setInterval(changeSlides, 3000);
+	var slidesInterval = setInterval(changeSlides, 2000);
 
 	function changeSlides() {
 		carouselList.animate({
@@ -21,9 +21,8 @@ $(function() {
 		clearInterval(slidesInterval);
 	});
 	carouselList.mouseout(function() {
-		setInterval(changeSlides, 3000);
-	});
-
+  		slidesInterval = setInterval(changeSlides, 2000);
+ 	});
 
 	var prev = $("prev");
 	var next = $("next");
